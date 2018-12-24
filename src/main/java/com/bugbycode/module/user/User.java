@@ -168,5 +168,4 @@ public class User implements UserDetails {
 	public void setUpdateTime(Date updateTime) {
 		this.updateTime = updateTime;
 	}
-
 }
