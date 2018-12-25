@@ -26,6 +26,8 @@ public class Role implements Serializable{
 	
 	private String grantedAuthority;
 
+	private int type;
+	
 	private Date createTime;
 	
 	private Date updateTime;
@@ -62,6 +64,14 @@ public class Role implements Serializable{
 		this.grantedAuthority = grantedAuthority;
 	}
 	
+	public int getType() {
+		return type;
+	}
+
+	public void setType(int type) {
+		this.type = type;
+	}
+
 	public Set<String> grantList(){
 		Set<String> set = new HashSet<String>();
 		if(StringUtil.isNotBlank(this.grantedAuthority)) {
