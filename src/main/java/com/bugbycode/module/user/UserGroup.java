@@ -19,6 +19,10 @@ public class UserGroup implements Serializable {
 	private Date createTime;
 	
 	private Date updateTime;
+	
+	private int roleId;
+	
+	private String roleName;
 
 	public int getId() {
 		return id;
@@ -59,6 +63,20 @@ public class UserGroup implements Serializable {
 	public void setUpdateTime(Date updateTime) {
 		this.updateTime = updateTime;
 	}
-	
-	
+
+	public int getRoleId() {
+		return roleId;
+	}
+
+	public void setRoleId(int roleId) {
+		this.roleId = roleId;
+	}
+
+	public String getRoleName() {
+		return roleName;
+	}
+
+	public void setRoleName(String roleName) {
+		this.roleName = roleName;
+	}
 }

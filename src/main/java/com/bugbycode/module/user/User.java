@@ -36,6 +36,14 @@ public class User implements UserDetails {
 	
 	private int type;
 	
+	private int roleId;
+	
+	private String roleName;
+	
+	private int groupId;
+	
+	private String groupName;
+	
 	private List<Role> roleList;
 	
 	private Date createTime;
@@ -167,5 +175,37 @@ public class User implements UserDetails {
 
 	public void setUpdateTime(Date updateTime) {
 		this.updateTime = updateTime;
+	}
+
+	public int getRoleId() {
+		return roleId;
+	}
+
+	public void setRoleId(int roleId) {
+		this.roleId = roleId;
+	}
+
+	public String getRoleName() {
+		return roleName;
+	}
+
+	public void setRoleName(String roleName) {
+		this.roleName = roleName;
+	}
+
+	public int getGroupId() {
+		return groupId;
+	}
+
+	public void setGroupId(int groupId) {
+		this.groupId = groupId;
+	}
+
+	public String getGroupName() {
+		return groupName;
+	}
+
+	public void setGroupName(String groupName) {
+		this.groupName = groupName;
 	}
 }
